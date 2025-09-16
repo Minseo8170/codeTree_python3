@@ -1,15 +1,7 @@
 A, B, C = map(int, input().split())
-if A > B:
-    X = A
-    A = B
-    B = X
-if B > C:
-    X = B
-    B = C
-    C = X
-if A > B:
-    X = A
-    A = B
-    B = X
-
-print(B)
+if A >= B and A <= C:
+    print(A)
+elif A <= B and B <= C:
+    print(B)
+else:
+    print(C)
