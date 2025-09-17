@@ -1,4 +1,3 @@
 a = input()
-b = a.replace(a[1], 'a', 1)
-c = b.replace(a[-2], 'a', 1)
-print(c)
+b = a[0] + 'a' + a[2:-2] + 'a' + a[-1]
+print(b)
