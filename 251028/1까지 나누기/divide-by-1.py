@@ -1,10 +1,8 @@
 N = int(input()) 
-i = 1
-cnt = 0
+cnt = 1
 while 1:
-    cnt += 1
-    N /= i
+    N /= cnt
     if N <= 1:
         print(cnt)
         break
-    i += 1
+    cnt += 1
