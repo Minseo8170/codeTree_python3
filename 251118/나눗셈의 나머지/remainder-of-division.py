@@ -3,6 +3,7 @@ a, b = map(int, input().split())
 
 while a > 1:
     count[int(a) % b] += 1
+    a -= a % b
     a /= b
 
 result = 0
