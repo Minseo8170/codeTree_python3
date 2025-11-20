@@ -5,7 +5,7 @@ a = list(map(int, input().split()))
 first = a[0]
 second = a[0]
 
-for i in a:
+for i in a[1:]:
     if i >= first:
         second = first
         first = i
