@@ -9,7 +9,6 @@ while n != 0:
         if a[i] > max_num:
             max_num = a[i]
             idx = i
-        elif a[i] == max_num:
-            max_num = a[i]
+            
     print(idx + 1, end=' ')
     n = idx
