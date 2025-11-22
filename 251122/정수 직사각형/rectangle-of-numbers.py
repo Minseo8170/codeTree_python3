@@ -1,6 +1,6 @@
 n, m = map(int, input().split())
 arr = [
-    [i + j * 3 for i in range(1, m+1)]
+    [i + j * m for i in range(1, m+1)]
     for j in range(n)
 ]
 
