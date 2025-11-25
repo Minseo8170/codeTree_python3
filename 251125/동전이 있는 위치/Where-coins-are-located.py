@@ -3,12 +3,15 @@ arr = []
 for _ in range(m):
     arr.append(list(map(int, input().split())))
 
-a = 0
+result = [
+    [0 for _ in range(n)]
+    for _ in range(n)
+]
+
+for i in range(m):
+    result[arr[i][0] - 1][arr[i][1] - 1] = 1
+
 for i in range(n):
     for j in range(n):
-        if  a < m and arr[a][0] == i + 1 and arr[a][1] == j + 1:
-            print(1, end=' ')
-            a += 1
-        else:
-            print(0, end=' ')
+        print(result[i][j], end=' ')
     print()
