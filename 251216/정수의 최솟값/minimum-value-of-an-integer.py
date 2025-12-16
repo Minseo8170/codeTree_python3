@@ -1,0 +1,16 @@
+a, b, c = map(int, input().split())
+
+# Please write your code here.
+def min_func(a, b, c):
+    if a > b:
+        if b > c:
+            return c
+        else:
+            return b
+    else:
+        if a > c:
+            return c
+        else:
+            return a
+
+print(min_func(a, b, c))
