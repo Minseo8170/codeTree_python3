@@ -2,7 +2,7 @@ a, b = map(int, input().split())
 
 # Please write your code here.
 def sosu(i):
-    for j in range(2, i // 2):
+    for j in range(2, i // 2 + 1):
         if i % j == 0:
             return False
     return True
