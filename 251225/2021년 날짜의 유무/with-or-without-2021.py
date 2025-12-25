@@ -4,7 +4,7 @@ M, D = map(int, input().split())
 eight = [2]
 zero = [4, 6, 9, 11]
 one = [1, 3, 5, 7, 8, 10, 12]
-if D <= 28:
+if D <= 28 and M <= 12 and M >= 1:
     print("Yes")
 elif D == 31 and one.count(M):
     print("Yes")
