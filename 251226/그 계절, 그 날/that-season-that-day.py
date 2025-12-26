@@ -11,7 +11,7 @@ flag = 0
 if Y % 4 == 0:
     if Y % 100 == 0 and Y % 400 == 0:
         flag = 1
-    elif Y % 400 == 0:
+    elif Y % 100 == 0:
         flag = 0
     else:
         flag = 1
